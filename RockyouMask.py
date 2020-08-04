@@ -1,5 +1,6 @@
 from os import system
 from os import chdir
+from os import name
 
 rule = open("mask.txt", "rt", encoding="Latin-1").read().split()
 
@@ -10,12 +11,13 @@ def convert(inp):
     inp = inp.replace("!", "?s")
     return (inp)
 
-input_ = input("directory of hashcat64.exe (empty if current directory): ")
+if name != "posix":
+    input_ = input("directory of hashcat64.exe (empty if current directory): ")
 
-if input_ == "":
-    pass
-else:
-    chdir(input_)
+    if input_ == "":
+        pass
+    else:
+        chdir(input_)
 
 while True:
     input_ = input("s - start / h - help: ")
@@ -308,7 +310,10 @@ while True:
 
 hashmode = input("Hash mode: ")
 hashfile = input("Hash file: ")
-syntax = ".\\hashcat64.exe -m " + hashmode + " -a 3 " + hashfile + " "
+if name == "posix":
+    syntax = "hashcat64.exe -m " + hashmode + " -a 3 " + hashfile + " "
+else:
+    syntax = ".\\hashcat64.exe -m " + hashmode + " -a 3 " + hashfile + " "
 system(syntax + convert("0000000000") + " --increment")
 system(syntax + convert("aaaaaaa") + " --increment")
 system(syntax + "?a?a?a?a?a --increment")
