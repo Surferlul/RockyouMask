@@ -20,9 +20,7 @@ On Windows put your hashes in a text file (one hash per line) in the hashcat dir
 On Linux put your hashes in a text file where you excecute the script
 
 cracked hashes:
-  
-  Linux: hashcat yourhashfilehere --show
-  
-  Windows: in the commandline navigateto the hashcat directory - .\hashcat64.exe yourhashfilehere --show
+Linux: hashcat yourhashfilehere --show
+Windows: in the commandline navigateto the hashcat directory - .\hashcat64.exe yourhashfilehere --show
 
 Running a Radeon RX 570 this script can bruit-force 70% of passwords in rockyou in about half a day, 60% in about half an hour
