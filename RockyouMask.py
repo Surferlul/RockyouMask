@@ -1,7 +1,7 @@
 from os import system
 from os import chdir
 
-rule = open("final.txt", "rt", encoding="Latin-1").read().split()
+rule = open("mask.txt", "rt", encoding="Latin-1").read().split()
 
 def convert(inp):
     inp = inp.replace("a", "?l")
