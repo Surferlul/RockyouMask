@@ -310,6 +310,14 @@ while True:
 
 hashmode = input("Hash mode: ")
 hashfile = input("Hash file: ")
+start = input("Start at mask-id (empty if start at start): ")
+if start =! "":
+    try:
+        rule = rule[int(start):]
+    except:
+        print("Start has to be int!")
+        exit
+
 if name == "posix":
     syntax = "hashcat64.exe -m " + hashmode + " -a 3 " + hashfile + " "
 else:
@@ -317,5 +325,6 @@ else:
 system(syntax + convert("0000000000") + " --increment")
 system(syntax + convert("aaaaaaa") + " --increment")
 system(syntax + "?a?a?a?a?a --increment")
-for i in rule:
-    system(syntax + convert(i))
+for i in range(len(rule)):
+    print("Current mask:", convert(rule[i]), " id: ", i)
+    system(syntax + convert(rule[i]))
