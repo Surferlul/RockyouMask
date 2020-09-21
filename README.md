@@ -1,8 +1,6 @@
 # RockyouMask
 A Mask-Attack using hashcat based on the rockyou leak
 
-This program works crossplatform Windows - Linux as long as you have python and hashcat installed
-
 
 
 python:
