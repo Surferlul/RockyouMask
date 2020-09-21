@@ -315,7 +315,7 @@ if start =! "":
     try:
         rule = rule[int(start):]
     except:
-        print("Start has to be int!")
+        print("Mask-id has to be int!")
         exit
 
 if name == "posix":
