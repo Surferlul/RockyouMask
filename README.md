@@ -31,7 +31,7 @@ cracked hashes:
 
 Linux: hashcat yourhashfilehere --show
 
-Windows: in the commandline navigateto the hashcat directory - .\hashcat64.exe yourhashfilehere --show
+Windows: in the commandline navigate to the hashcat directory - .\hashcat64.exe yourhashfilehere --show
 
 
 
