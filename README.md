@@ -4,16 +4,12 @@ A Mask-Attack using hashcat based on the rockyou leak
 
 
 python:
-  
   - Linux: sudo apt install python
-  
   - Windows: https://www.microsoft.com/en-us/p/python-38/9mssztt1n39l?activetab=pivot:overviewtab
 
 
 hashcat:
-  
   - Linux: sudo apt-get install hashcat
-  
   - Windows: https://hashcat.net/files/hashcat-5.1.0.7z
 
 
@@ -25,9 +21,7 @@ On Linux put your hashes in a text file where you excecute the script
 
 
 cracked hashes:
-
   - Linux: hashcat yourhashfilehere --show
-  
   - Windows: in the commandline navigate to the hashcat directory - .\hashcat64.exe yourhashfilehere --show
 
 
