@@ -26,4 +26,4 @@ cracked hashes:
 
 
 
-Running a Radeon RX 570 this script can bruit-force 70% of passwords in rockyou in about half a day, 60% in about half an hour
+Running a Radeon RX 570 this script can brute-force 70% of passwords in rockyou in about half a day, 60% in about half an hour
