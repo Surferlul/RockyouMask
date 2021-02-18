@@ -1,6 +1,8 @@
 # RockyouMask
 A Mask-Attack using hashcat based on the rockyou leak
 
+I've collected the most effective masks to use to crack passwords and put it all together so you have to do as little manual labor as possible to reach (sub) optimal results.</br>
+Suboptimal because knowing your target and using that information for a custom mask goes a lot further than even the best password cracking algotithm based on the average in the population
 
 
 python:
