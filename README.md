@@ -1,17 +1,19 @@
 # RockyouMask
 A Mask-Attack using hashcat based on the rockyou leak
 
+I am not developing this project anymore. The code is not complex so don't be afraid to take a peek and modify it yourself. If you want to know how I generated the maks feel free to [contact me](https://surferlul.github.io) and I may be able to remember how I did it.
+
 I've collected the most effective masks to use to crack passwords and put it all together so you have to do as little manual labor as possible to achieve (sub) optimal results.</br>
 Suboptimal because knowing your target and using that information for a custom mask goes a lot further than even the best password cracking algotithm based on the average person
 
 
 python:
-  - Linux: sudo apt install python
+  - Linux (Debian Based): sudo apt install python
   - Windows: https://www.microsoft.com/en-us/p/python-38/9mssztt1n39l?activetab=pivot:overviewtab
 
 
 hashcat:
-  - Linux: sudo apt-get install hashcat
+  - Linux (Debian Based): sudo apt-get install hashcat
   - Windows: https://hashcat.net/files/hashcat-5.1.0.7z
 
 
