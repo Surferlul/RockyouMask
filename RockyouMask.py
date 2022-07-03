@@ -311,7 +311,7 @@ while True:
 hashmode = input("Hash mode: ")
 hashfile = input("Hash file: ")
 start = input("Start at mask-id (empty if start at start): ")
-if start =! "":
+if start != "":
     try:
         rule = rule[int(start):]
     except:
